@@ -44,12 +44,11 @@ def main():
     st.header("📌 Enter your question")
 
     with st.container():
-        question = st.text_input("")
+        question = st.text_input("", "When was Barack Obama born?")
 
         answer = get_answer(question, reader)
 
         st.info(answer)
-
 
 
 if __name__ == '__main__':
